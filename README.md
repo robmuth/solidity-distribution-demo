@@ -1,6 +1,11 @@
 Solidity Distribution Demo
 ============================
 
+Register accounts and distribute them into groups with a Linear Congruential Generator (LCG) for pseudo random numbers.
+The PRNG uses the last block hash and a secret owner seed.
+
+## Test case (for Ganache)
+
 1. Add network to ```truffle-config.js```
    For example, add ganache:
 
