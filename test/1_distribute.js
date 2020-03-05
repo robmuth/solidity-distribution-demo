@@ -5,7 +5,7 @@ contract("DistributeInGroups", accounts => {
 		return Distribute.deployed()
 			.then(async (instance) => {
 				for(let i = 1; i < 10; i++) {
-					await instance.register({ from: accounts[i]});
+					await instance.register({from: accounts[i]});
 				}
 
 				return instance;
